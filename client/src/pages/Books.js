@@ -7,6 +7,9 @@ import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
 import { Input, TextArea, FormBtn } from "../components/Form";
 
+
+const API_URL = 'https://www.googleapis.com/books/v1/volumes?q=Harry%20Potter%20and%20the%20sorcerers%20stone+inauthor:jk%20rowling&printType=books';
+
 class Books extends Component {
   state = {
     books: [],
@@ -116,3 +119,8 @@ class Books extends Component {
 }
 
 export default Books;
+
+
+//put google api somewhere here!
+
+//https://www.googleapis.com/books/v1/volumes?q=Harry%20Potter%20and%20the%20sorcerers%20stone+inauthor:jk%20rowling&printType=books&key=AIzaSyAztBz8V5PRxxBXR9EALqnbxhGA60vATE8
